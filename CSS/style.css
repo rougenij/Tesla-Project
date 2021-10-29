@@ -2,52 +2,206 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
 }
 @font-face {
-    font-family: 'Gotham';
+    font-family: 'TeslaFont';
     src: url('../Assets/Fonts/GothamSSm-Bold_Web.woff2');
 }
 
 @font-face {
-    font-family: 'Gotham';
+    font-family: 'TeslaFont';
     src: url('../Assets/Fonts/GothamSSm-Bold_Web.woff2');
     font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Gotham';
+    font-family: 'TeslaFont';
     src: url('../Assets/Fonts/GothamSSm-Light_Web.woff2');
     font-weight: lighter;
   }
 
 @font-face {
-    font-family: 'Gotham';
+    font-family: 'TeslaFont';
     src: url('../Assets/Fonts/GothamSSm-Medium_Web.woff2');
     font-weight: medium;
 }
 .main-container {
+    background-size: contain;
+    background-repeat: no-repeat;
     background: url("../Images/model3background.jpg") center center/cover;
-    height: 100vh;
+    height: 100vh; 
     width: 100vw;
 }
 .main-header{
-    position: relative;
+    width: fit-content;
+    position: fixed;
     top: 25px;
     left: 55px;
 }
+.middlenavbar button:hover{
+    background: gray;
+    border-radius: 10px;
+    
+}
+ .middlenavbar a{
+    color: white;
+    text-decoration: none;
+}
+.sidenavbar a{
+    color: white;
+    text-decoration: none;
+}
 .middlenavbar button{
         font-size: 14px;
-        font-family: 'Gotham', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
+        font-family: 'TeslaFont';
         display: inline-block;
-        margin: 89px 15px;
+        padding: 5px;
+        margin: 83px 5px;
         color: white;
         background-color: transparent;
         background-repeat: no-repeat;
         border: none;
         cursor: pointer;
-        overflow: hidden;
-        position: relative;
-        left: 620px;
-        top: -90px;
+
     } 
+.middlenavbar {
+    width: 600px; 
+    position: relative;
+    left: 600px;
+    top: -110px; 
+    /* float: calc(100vw - 50%); */
+}
+.tesla-logo{
+    width: 120px;
+}
+.sidenavbar{
+    width: fit-content;
+    float: left;
+    position: relative;
+    top: -300px;
+    left: 1600px;
+}
+.sidenavbar button {
+
+        font-size: 14px;
+        font-family: 'TeslaFont';
+        display: inline-block;
+        padding: 5px; 
+        margin: 80px 5px;
+        color: white;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;    
+        
+}
+.sidenavbar button:hover{
+    background: gray;
+    border-radius: 10px;
+}
+.text4model3{
+    float: left;
+    position: relative;
+    left: 880px;
+    top: 95px;
+}
+#model3text {
+    font-size: 40px;
+    font-family: 'TeslaFont';
+    text-align: center;
+    color: white;
+    
+}
+.main-footer{
+    font-family: 'TeslaFont';
+    float: left;
+    position: relative;
+    bottom: -586px;
+    left: 500px;
+    color: white;
+}
+#speedometer {
+    overflow: hidden;
+    color: white;
+}
+.box1 {
+    position: relative;
+    top: 214px;
+    height: 10px;
+}
+#Speedometer-number{
+    font-size: 28px;
+    font-family: 'TeslaFont';
+}
+#zerotosixty {
+    font-size: 12px;
+}
+
+.range {
+    font-family: 'TeslaFont';
+    position: relative;
+    left: 167px;
+    top: 207px;
+}
+#rangetext {
+    font-size: 28px;
+
+}
+#rangesecondlevel {
+    font-size: 12px;
+}
+.drivetype {
+    font-family: 'TeslaFont';
+    position: relative;
+    left: 334px;
+    top: 155px;
+}
+#AWD {
+    font-size: 28px;
+}
+#dualmotor {
+    font-size: 12px;
+}
+.ordernow-button {  
+    position: relative;
+    left: 450px;
+    top: 100px;
+}
+.ordernow-button button{
+        color: white;
+        padding: 10px 35px;
+        font-family: 'TeslaFont';
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;  
+        border-radius: 25px;
+        border: 5px white solid  ;
+}
+.ordernow-button a{
+    text-decoration: none;
+    color: white;
+  
+}
+.ordernow-button button:hover{
+    color: black;
+    background-color: white;
+}
+.second-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: url("../Images/model3secondpagebackground.png") center center/cover;
+    height: 100vh;
+    width: 100vw;
+}
