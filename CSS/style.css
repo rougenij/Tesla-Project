@@ -34,12 +34,21 @@ body {
     src: url('../Assets/Fonts/GothamSSm-Medium_Web.woff2');
     font-weight: medium;
 }
+.main {
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
 .main-container {
     background-size: contain;
     background-repeat: no-repeat;
     background: url("../Images/model3background.jpg") center center/cover;
     height: 100vh; 
     width: 100vw;
+    scroll-snap-align: start;
+}
+.second-container{
+    scroll-snap-align: start;
 }
 .main-header{
     width: fit-content;
@@ -190,6 +199,7 @@ body {
         border: 5px white solid  ;
 }
 .ordernow-button a{
+    
     text-decoration: none;
     color: white;
   
@@ -198,10 +208,318 @@ body {
     color: black;
     background-color: white;
 }
+.mainpage-sidefloatbar{
+    margin: 10px;
+    list-style: none;
+    padding: 5px;
+    /* color: white; */
+    width: fit-content;
+    top: 36vh;
+    background: transparent;
+    float: left;
+    position: fixed;
+    z-index: 5;
+}
+.mainpage-sidefloatbar span {
+    color: white;
+    border: 5px black thin;
+}
+.mainpage-sidefloatbar button{
+    color: white;
+    padding: 3px;
+    color:transparent;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: 0;
+    cursor:pointer;
+}
+.mainpage-sidefloatbar a{
+    font-family: 'TeslaFont';
+    font-size: 10px;
+    color: transparent;
+    text-decoration: none;
+}
+.mainpage-sidefloatbar a:hover{
+    color: #fff;
+}
 .second-container {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background: url("../Images/model3secondpagebackground.png") center center/cover;
+    scroll-snap-align: start;
+    background: #F5F5F5;
     height: 100vh;
     width: 100vw;
+}
+.leftside{
+    background-color: white;
+    height: 100vh;
+    width: 25vw;
+}
+
+.leftside-text{
+    font-family: 'TeslaFont';
+    font-size: 14px;
+    width: 20vw;
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+.rating {
+    background-color: #E2E4E4;
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 320px;
+    border-radius: 35px;
+    top: 100px;
+    left: 50px;
+}
+.rating-title{
+    font-family: 'TeslaFont';
+    float: left;
+    text-align: center;
+    position: relative;
+    top: 35px;
+    left: 30px;
+    font-size: 18px;
+}
+.row1left {
+    font-family: 'TeslaFont';
+    font-size: 14px;
+    position: relative;
+    left: -80px;
+    top: 10px;
+}
+.secondword-firstrow{
+    font-size: 8px;
+}
+.row1right {
+    font-size: 17px;
+    position: relative;
+    top: -20px;
+    left: 80px;
+}
+.row2left{
+    font-family: 'TeslaFont';
+    font-size: 14px;
+    position: relative;
+    left: -80px;
+    top: 10px;
+}
+.secondword-2row{
+    font-size: 8px;
+}
+.row2right {
+    font-family: 'TeslaFont';
+    font-size: 17px;
+    position: relative;
+    left: 80px;
+    top: -20px;
+}
+.row3left{
+    font-family: 'TeslaFont';
+    font-size: 14px;
+    position: relative;
+    left: -80px;
+    top: 10px;
+}
+.secondword-3row{
+    font-size: 8px;
+}
+.row3right {
+    font-family: 'TeslaFont';
+    font-size: 17px;
+    position: relative;
+    left: 80px;
+    top: -20px;
+}
+.row4left {
+    font-family: 'TeslaFont';
+    font-size: 14px;
+    position: relative;
+    left: -80px;
+    top: 10px;
+}
+.secondword-4row{
+    font-size: 8px;
+}
+.row4right {
+    font-family: 'TeslaFont';
+    font-size: 17px;
+    position: relative;
+    left: 80px;
+    top: -20px; 
+}
+.row5left {
+    font-family: 'TeslaFont';
+    font-size: 14px;
+    position: relative;
+    left: -80px;
+    top: 10px;
+}
+.row5right {
+    font-family: 'TeslaFont';
+    font-size: 17px;
+    position: relative;
+    left: 80px;
+    top: -10px;  
+}
+.learnmore {
+    position: relative;
+    top: 285px;
+    right: 40px;
+}
+#learnmore {
+    background-color: white;
+    font-size: 24px;
+    padding: 5px 12px;
+    border-radius: 25px;
+}
+#learnmore:hover{
+    color: white;
+    background-color: black;
+}
+.ordernow button{
+    border: 2px black solid;
+    border-radius: 20px;
+    padding: 10px 25px;
+    position: relative;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    top: 245px;
+    left: 140px;
+}
+.ordernow button:hover{
+    color: white;
+    background-color: black;
+}
+.rightside img{
+    float: right;
+    position: relative;
+    left: 1570px;
+    top: -601px;
+}
+.third-page{
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100vw;
+}
+.third-page .upper-section {
+    background: url("../Images/tesla-third-page-background.jpg") center center/cover;
+    height: calc(100vh - 5%);
+    width: 100vw;
+}
+.bottom-footer{
+    font-family: 'TeslaFont';
+    float: left;
+    position: relative;
+    left: 450px;
+    top: 50px;
+}
+.learnmore-footer{
+    border: 2px black solid;
+    background-color: white;
+    font-size: 24px;
+    padding: 2px 10px;
+    border-radius: 25px;
+}
+.learnmore-footer:hover {
+    color: white;
+    background-color: black;
+}
+.ordernow-footer{
+    border: 3px black solid;
+    border-radius: 20px;
+    padding: 10px 25px;
+    position: relative;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    left: 10px;
+}
+.ordernow-footer:hover {
+    color: white;
+    background-color: black;
+}
+.rightside-footer p{
+    font-family: 'TeslaFont';
+    font-size: 14px;
+    width: 1000px;    
+    line-height: 25px;
+    position: relative;
+    top: -100px;
+    left: 450px;
+}
+#speedometer-bottom{
+    color: white;
+    position: relative;
+    top: 660px;
+    left: 590px;
+}
+
+.bottom-message {
+    text-align: center;
+    color: white;
+    font-family: 'TeslaFont';
+    position: relative;
+    top: 670px;
+    left: 450px;
+}
+.second-bottom-message {
+    color: white;
+    text-align: center;
+    font-family: 'TeslaFont';
+    position: relative;
+    top: 670px;
+    left: 545px;
+}
+.speednumber {
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    font-family: 'TeslaFont';
+    position: relative;
+    top: 600px;
+    left: 1000px;
+}
+.upper-box2-message {
+    color: white;
+    font-size: 14px;
+    font-family: 'TeslaFont';
+    text-align: center;
+    position: relative;
+    left: 890px;
+    top: 600px;
+}
+.upper-box2-message2{
+    color: white;
+    font-size: 14px;
+    font-family: 'TeslaFont';
+    text-align: center;
+    position: relative;
+    left: 955px;
+    top: 602px;
+}
+#AWD-bottom{
+    color: white;
+    font-family: 'TeslaFont';
+    font-size: 28px;
+    position: relative;
+    left: 1450px;
+    top: 540px;
+}
+.upperbox-message{
+    font-size: 14px;
+    color: white;
+    font-family: 'TeslaFont';
+    text-align: center;
+    position: relative;
+    left: 1320px;
+    top: 540px;
+}
+.upperbox-message2{
+    font-size: 13px;
+    color: white;
+    font-family: 'TeslaFont';
+    text-align: center;
+    position: relative;
+    left: 1330px;
+    top: 540px;
 }
